@@ -27,3 +27,7 @@ $force_direct_link = false;
 // NULL: 添加管理员不需要输入注册码
 // FALSE: 禁用前界面添加管理员功能
 $registCode = FALSE;
+//生成新文件名，不含扩展名
+function generateNewName() {
+	return '[GalACG]EX' . str_pad((time() - 1402761600),9,'0',STR_PAD_LEFT);
+}
